@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>login</title>
+</head>
+<style>
+
+#form{
+	text-align : center;
+	margin-top : 50px;	
+}
+
+#head{
+	margin-left : 260px;
+	margin-top : 80px;
+	font-family: sans-serif;
+}
+
+img{
+	width: 180px;
+	height :150px;
+	align-items: center;
+	border-radius: 50%;
+}
+
+input[type=text], input[type=password] {
+	  width: 350px;
+	  padding: 12px 20px;
+	  margin: 8px 0;
+	  display: inline-block;
+	  border: 1px solid #ccc;
+	  box-sizing: border-box;
+}
+
+div{
+	background-color: #f2f2f2;
+	height:260px;
+	width:380px;
+	border-radius: 10px;
+	margin-left : 330px;
+}
+
+input[type=submit]{
+  background-color: #4CAF50;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 350px;
+}
+
+
+</style>
+<body>
+
+<b><h1 id="head"> Welcome to our Organisation !! </h1> </b> 
+<div>
+
+<form action="login" id="form">
+
+<input type="text" name="username" placeholder="Enter UserName"><br><br>
+<input type="text" name="password" placeholder="Enter Password"><br><br>
+<input type="submit" value="login"><br><br>
+
+<a href="http://localhost:8080/Sample/register.html">New user?Click here!!</a>
+<a href="http://localhost:8080/sample/GetMovieServlet.java">Show Movies!!</a>
+</form>
+
+</div>
+
+</body>
+</html>

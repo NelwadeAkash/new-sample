@@ -1,0 +1,32 @@
+create table login(
+username varchar(25) primary key not null,
+password varchar(25) not null );
+
+create table Movie_details(
+moviename varchar(25) primary key not null,
+actor varchar(25) not null,
+language varchar(25) not null,
+rating varchar(25) not null,
+ticketprice varchar(25) not null
+);
+
+create table booking(
+movieId INT(3) auto_increment,
+moviename varchar(25) not null,
+theatername varchar(25) not null,
+movieshow varchar(25) not null,
+seatnumber varchar(25) not null,
+ticketprice varchar(25) not null,
+primary key(movieId)
+);
+
+insert into login( username , password) values("gowtham" , "go23");
+
+insert into Movie_details(moviename , actor , language , rating , ticketprice ) 
+values("Avenger" , "robert" , "english,tamil" , "5/5" , "200");
+
+insert into arrs(moviename , movieshow, seatnumber, ticketprice ) values("avenger" , "robert" , "english/tamil" , "250" );
+
+delete from pvr where moviename="premam";
+
+select * from pvr;

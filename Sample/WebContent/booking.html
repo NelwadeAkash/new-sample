@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Book Now</title>
+</head>
+<body>
+<b><h2 style="font-family: sans-serif;">Fill out this form to book your tickets</h2></b>
+<form action="book">
+<table cellspacing="20px" cellpadding="5px">
+<tr>
+<td>
+<label>Movie Name</label></td> <td> <input type="text" id="moviename" name="moviename" autofocus > <br> </td></tr>
+
+<!-- <tr><td> <label>Theater Name</label> </td> <td> 
+<input type="text" id="theatername" name="theatername"> <br> </td></tr> -->
+
+<tr><td> <label>Theater Name</label> </td> 
+
+<td>
+<select id="theaterList" name="theatername">
+          <option value="arrs">ARRS MULTIPLEX</option>
+          <option value="big_cinemas">BIG CINEMAS</option>
+          <option value="aascar">AASCAR THEATER</option>
+          <option value="pvr">PVR CINEMAS</option>
+          <option value="venkateshwara">VENKATESHWARA THEATER</option>
+</select> <br> </td></tr>
+
+<tr><td> <label>Movie Show</label> </td> 
+
+<td>
+<select id="showlist" name="show">
+          <option value="MORNING SHOW">MORNING SHOW</option>
+          <option value="AFTERNOON SHOW">AFTERNOON SHOW</option>
+          <option value="EVENING SHOW">EVENING SHOW</option>
+          <option value="NIGHT SHOW">NIGHT SHOW</option>
+</select> <br> </td></tr>
+
+<tr>
+<td>
+<label>Seat Number </label> </td> <td>1<input type="checkbox" name="seat" value="1">
+							2<input type="checkbox" name="seat" value="2">
+							3<input type="checkbox" name="seat" value="3">
+							4<input type="checkbox" name="seat" value="4">
+							5<input type="checkbox" name="seat" value="5"> <br>
+							
+							6<input type="checkbox" name="seat" value="6">
+							7<input type="checkbox" name="seat" value="7">
+							8<input type="checkbox" name="seat" value="8">
+							9<input type="checkbox" name="seat" value="9">
+							10<input type="checkbox" name="seat" value="10"> <br> </td> </tr>
+							
+<tr> <td><label>Ticket Price </label> </td> <td><input type="radio" name="price" value="100"> 2ND CLASS <br>
+									<input type="radio" name="price" value="200"> 1ST CLASS <br>
+									<input type="radio" name="price" value="300"> BOX <br> </td> </tr>
+									
+<tr><td></td> <td> <input type="submit" value="Book now"> </td> </tr>
+
+							
+</table>
+
+</form>
+</body>
+</html>
